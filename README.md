@@ -31,6 +31,35 @@ import uuid            # UUID generation for zones
   pip install kiutils
   ```
 
+
+
+## ⚡ Quick Start Examples
+
+### Example 1: Basic Command Line Usage
+
+**Scenario:** You have a KiCAD board `myboard.kicad_pcb` with an Edge.Cuts outline and want to convert it to a polygon zone.
+
+```bash
+# Basic - Auto-generates output filename
+python EdgeToPoly_v2.py myboard.kicad_pcb
+
+# Output: myboard_edited.kicad_pcb
+```
+
+**That's it!** ✨ Your zone has been created.
+
+---
+
+### Example 2: Specify Output File
+
+**Scenario:** You want to keep the original file and save the result with a specific name.
+
+```bash
+python EdgeToPoly_v2.py myboard.kicad_pcb -o myboard_with_zone.kicad_pcb
+```
+
+
+
 ---
 
 ## 🏗️ Architecture Overview
